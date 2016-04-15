@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Radio</title>
+    <link type="text/css" rel="stylesheet" href="css/global.css">
+    <link type="text/css" rel="stylesheet" href="css/tabe.css">
+    <link type="text/css" rel="stylesheet" href="css/ios7.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/radio.js"></script>
+    <script src="js/src.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="download">
+    <img src="https://i2.wp.com/i230.photobucket.com/albums/ee124/joaclint/joaclint_istgud/ruedas.gif ">
+</div>
+<div class="global hidden" id="global">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <div class="batn-group-vertical">
+                    <div class="band_btn">
+                        <a href="#">
+                            <img id='band_btn' class="class_hover_img_boot" src="main/image/01_band_btn.png" alt="#">
+                        </a>
+                    </div>
+                    <div class="seek_btn clearfix">
+                        <div class="seek_btn-left">
+                            <a href="#">
+                                <div id="seek_left" class="seek_btn-left-bt boot_hov_class"></div>
+                            </a>
+                        </div>
+                        <div class="seek_btn-right">
+                            <a href="#">
+                                <div id="seek_right" class="seek_btn-right-bt boot_hov_class"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tune_btn clearfix">
+                        <div class="tune_btn-left">
+                            <a href="#">
+                                <div id="tune_left" class="tune_btn-left-bt boot_hov_class"></div>
+                            </a>
+                        </div>
+                        <div class="tune_btn-right">
+                            <a href="#">
+                                <div id="tune_right" class="tune_btn-right-bt boot_hov_class"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button_play-cont">
+                        <img class="img-top" src="main/image/play-top.png"/>
+                        <img id="img-left" class="img-left" src="main/image/play-left.png"/>
+                        <img id='stop' class="img-ok" src="main/image/play-ok.png"/>
+                        <img id="img-righy" class="img-righy" src="main/image/play-right.png"/>
+                        <img class="img-botton" src="main/image/play-bottom.png"/>
+                    </div>
+                    <div class="volume">
+                        <section id="main">
+                            <div id="bars">
+                                <div id="control"></div>
+                            </div>
+                        </section>
+                        <audio id="radio_play" src="main/mp3/9.mp3" play="true"></audio>
+                        <audio id="radio_shum" src="main/mp3/10.mp3"></audio>
+                        <audio id="broadcast" src="main/mp3/broadcast.mp3"></audio>
+                        <audio id="streaming" src="main/mp3/streaming.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-10 col-xs-10">
+                <div class="tabbable-panel">
+                    <div class="tabbable-line tabs-below">
+                        <div class="tab-content">
+                            <div class="header_cont">
+                                <i class="fa fa-heart"></i>
+                                <span class="radio-title" id="radio_title">92.9 FOGGY MOUNTAIN</span>
+                                <img class="radio-logo" src="main/image/actionbar_logo.png" alt="#">
+
+                                <div class="number">
+                                    <span id="number_1" class="hd">
+                                         1
+                                    </span>
+                                     <span id="number_2">
+                                          2
+                                    </span>
+                                     <span id="number_3    " class="hd">
+                                         3
+                                    </span>
+                                </div>
+                                <!--<span class="volume-cont">-->
+                                <!--<i class="fa fa-ellipsis-v"></i>-->
+                                <!--<i class="fa fa-ellipsis-v"></i>-->
+                                <!--<i class="fa fa-ellipsis-v"></i>-->
+                                <!--<i class="fa fa-ellipsis-v"></i>-->
+                                <!--<i class="fa fa-ellipsis-v"></i>-->
+                                <!--</span>-->
+                                <div id="volumcontroller">
+                                </div>
+                                <div class='img-cont-antena'>
+                                    <img id="signal" src="images/play.png" alt="">
+                                </div>
+                                <div class='img-cont-antena'>
+                                    <img id="antena" src="images/icon_radio_2.png" alt="">
+                                </div>
+                                <div class="next-radio-logo grup-div">
+                                    <div id="div-fixe" class="div-fixe">
+                                        <img id="play_c" src="images/play_c.png" alt="" >
+                                        <img id="antena" src="images/icon_radio_2.png" alt="">
+                                    </div>
+                                    <div id="car_div" class="next-radio-logo div-go">
+                                        <img id="car" src="images/car.png" style="margin-top: 0px ; margin-left: 0px;"
+                                             alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane active " id="tab_below_1">
+
+                                <!--&lt;!&ndash;<h3><i class="fa fa-heart"></i><span class="radio-title">89.7 EENL</span> <img class="radio-logo" src="main/image/actionbar_logo.png" alt="#"> <span class="next-radio-logo"><img src="images/NextRadio_horz_overwhite.svg" alt="#"></span></h3>&ndash;&gt;-->
+                                <!--<div class="table-panel-content">-->
+                                <!--<h3>Next Level Radio</h3>-->
+
+                                <!--<div class="table-panel-content-item clearfix">-->
+                                <!--<img src="images/1bd2014.jpg" alt="">-->
+
+                                <!--<h1>89.7 EENL</h1>-->
+
+                                <!--<h2>Next Level Radio</h2>-->
+                                <!--<h4>Next Level</h4>-->
+
+                                <!--</div>-->
+                                <!--</div>-->
+
+                                <div class="no-padding single-title">
+                                    <p>
+                                        <a href="#">
+                                            <i id="heart" class="fa fa-heart">
+                                            </i>
+                                        </a>
+                                       <span id="bookmarked">
+                                           Bookmarked on  92.9 FOGGY MOUNTAIN
+                                       </span>
+                                    </p>
+                                </div>
+                                <div class="table-panel-content table-panel-content-more-item">
+                                    <!--<h3>89.7 EENL</h3>-->
+                                    <div class="buttons left-butt ">
+                                        <a href="#">BUY</a>
+                                        <a href="#">DISLIKE</a>
+                                        <a href="#">LIKE</a>
+                                        <a href="#">SHARE</a>
+                                    </div>
+                                    <div class="table-panel-content-item clearfix ">
+                                        <img id='diapazon_img' src="main/logos/9.png" alt="">
+                                        <h1 id='diapazon' class="first-conf">92.9</h1>
+                                        <h2 id='diapazon_name' class="first-conf">FOGGY MOUNTAIN</h2>
+                                        <h4 class="first-conf">Next Level</h4>
+                                        <div class="buttons">
+                                            <a id='buy' class="" href="#">BUY</a>
+                                            <a class="more " href="#">MORE</a>
+                                            <a class="back inactive" href="#"><i class="fa fa-caret-left"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="sucsess-cont" class="col-md-12 col-sm-12 col-xs-12 sucsess-cont">
+                                    <p><span class="sucses-ckeck"><i class="fa fa-check"></i></span>Not implemented yet
+                                    </p>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane" id="tab_below_2">
+
+                                <div class="no-padding single-title">
+                                    <div class="buttons guide-menu">
+                                        <a href="#" class="guide-tab">Live Guide</a>
+                                        <a href="#" class="genre-tab" data-toggle="tab">Genre </a>
+                                        <a href="#" class="fraq-tab">Freq</a>
+                                    </div>
+                                </div>
+                                <div class="tab-2-cont" id="">
+                                    <div class="carusel-cont1 col-lg-4 col-md-4 col-sm-4 col-xs-4 active-slayd"
+                                         id="jssor_1"
+                                         style="position: relative; margin: 0 auto; top: 0px; left: 0px; height: 100px; overflow: hidden; visibility: hidden;">
+                                        <!-- Loading Screen -->
+                                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
+
+                                            </div>
+                                            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                                        </div>
+                                        <div class="sliyder_class" data-u="slides"
+                                             style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
+                                            <div id='bloc_1' class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_1">
+                                                    <img data-u="image" src="main/logos/1.png"/>
+
+                                                    <h3>102.7</h3>
+                                                    <h4>COMEDY</h4>
+                                                </a>
+                                            </div>
+                                            <div id='bloc_2' class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_1">
+                                                    <img data-u="image" src="main/logos/2.png"/>
+
+                                                    <h3>103.5</h3>
+                                                    <h4>MEGA</h4>
+                                                </a>
+                                            </div>
+                                            <div id='bloc_3' class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_1">
+                                                    <img data-u="image" src="main/logos/3.png"/>
+
+                                                    <h3>101.9</h3>
+                                                    <h4>PRIDE</h4>
+                                                </a>
+                                            </div>
+                                            <div id='bloc_4' class="img-cont " style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_1">
+                                                    <img data-u="image" src="main/logos/4.png"/>
+                                                    <h3>96.9</h3>
+                                                    <h4>IRISH</h4>
+                                                </a>
+                                            </div>
+                                            <div id='bloc_5' class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_1">
+                                                    <img data-u="image" src="main/logos/5.png"/>
+                                                    <h3>94.7</h3>
+                                                    <h4>WCSX</h4>
+                                                </a>
+                                            </div>
+                                            <div id='bloc_6' class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_1">
+                                                    <img data-u="image" src="main/logos/6.png"/>
+                                                    <h3>102.5</h3>
+                                                    <h4>WOLF</h4>
+                                                </a>
+                                            </div>
+                                            <div id='bloc_7' class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_1">
+                                                    <img data-u="image" src="main/logos/7.png"/>
+                                                    <h3>106.7</h3>
+                                                    <h4>MAGIC</h4>
+                                                </a>
+                                            </div>
+                                            <div id='bloc_8' class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_1">
+                                                    <img data-u="image" src="main/logos/8.png"/>
+                                                    <h3>105.7</h3>
+                                                    <h4>WROR</h4>
+                                                </a>
+                                            </div>
+                                            <div id='bloc_9' class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_1">
+                                                    <img data-u="image" src="main/logos/9.png"/>
+                                                    <h3>FOGGY MOUNTAIN</h3>
+                                                    <h4>92.9</h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                        <div class="buttons guide-cont-rock">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_7">OTHER</a>
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_7">ROCK </a>
+                                        </div>
+                                    </div>
+                                    <div class="carusel-cont2 col-lg-4 col-md-4 col-sm-4 col-xs-4" id="jssor_4"
+                                         style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; visibility: hidden;">
+                                        <!-- Loading Screen -->
+                                        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
+                                            </div>
+                                            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                                        </div>
+                                        <div class="sliyder_class" data-u="slides"
+                                             style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont img-cont-active" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont img-cont-active" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                            <div class="img-cont" style="display: none;">
+                                                <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                    <img data-u="image" src="images/img-fallback.svg"/>
+                                                    <h3>100.7</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane" id="tab_below_3">
+                                <div class="no-padding single-title">
+                                    <h2>Favorites</h2>
+                                </div>
+                                <div class="carusel-cont2" id="jssor_2"
+                                     style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; visibility: hidden;">
+                                    <!-- Loading Screen -->
+                                    <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
+                                        </div>
+                                        <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                                    </div>
+                                    <div class="sliyder_class" data-u="slides"
+                                         style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont img-cont-active" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont img-cont-active" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+                                            <h3>100.7</h3>
+                                        </div>
+                                    </div>
+                                    <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab_below_4">
+                                <div class="no-padding single-title">
+                                    <h2>Bookmars</h2>
+                                </div>
+                                <div class="carusel-cont3" id="jssor_3"
+                                     style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; visibility: hidden;">
+                                    <!-- Loading Screen -->
+
+                                    <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
+                                        </div>
+                                        <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                                    </div>
+                                    <div id="bookmars" class="sliyder_class" data-u="slides"
+                                         style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
+                                        <div class="img-cont" style="display: none;">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                <img data-u="image" src="images/img-fallback.svg"/>
+                                                <h2>Don't It</h2>
+                                                <h3>100.7</h3>
+                                            </a>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                <img data-u="image" src="images/img-fallback.svg"/>
+                                                <h2>Don't It</h2>
+                                                <h3>100.7</h3>
+                                            </a>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                <img data-u="image" src="images/img-fallback.svg"/>
+                                                <h2>Don't It</h2>
+                                                <h3>100.7</h3>
+                                            </a>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                <img data-u="image" src="images/img-fallback.svg"/>
+
+                                                <h2>Don't It</h2>
+
+                                                <h3>100.7</h3>
+                                            </a>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                <img data-u="image" src="images/img-fallback.svg"/>
+
+                                                <h2>Don't It</h2>
+
+                                                <h3>100.7</h3>
+                                            </a>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                <img data-u="image" src="images/img-fallback.svg"/>
+
+                                                <h2>Don't It</h2>
+
+                                                <h3>100.7</h3>
+                                            </a>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                <img data-u="image" src="images/img-fallback.svg"/>
+
+                                                <h2>Don't It</h2>
+
+                                                <h3>100.7</h3>
+                                            </a>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                <img data-u="image" src="images/img-fallback.svg"/>
+
+                                                <h2>Don't It</h2>
+
+                                                <h3>100.7</h3>
+                                            </a>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <a data-toggle="tab" class="tab-link" href="#tab_below_6">
+                                                <img data-u="image" src="images/img-fallback.svg"/>
+
+                                                <h2>Don't It</h2>
+
+                                                <h3>100.7</h3>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab_below_5">
+                                <div class="table-panel-content">
+                                    <div class="table-panel-content-item table-panel-content-item-set clearfix">
+                                        <h1>Settings</h1>
+
+                                        <div>
+                                            <ul class="seting-cont">
+                                                <li class="lacal-cont-boot">
+                                                    <h3>Location</h3>
+
+                                                    <p>Piscataway, JN
+
+                                                    </p>
+
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-11 col-sm-11 col-xs-11 no-padding">
+                                                        <h3>Sign in to Twitter</h3>
+                                                    </div>
+                                                    <div class="col-md-1 col-sm-1 col-xs-1">
+                                                        <span class="twitter-icon-cont">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </span>
+
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-11 col-sm-11 col-xs-11 no-padding">
+                                                        <h3>Enable NextRadio features</h3>
+                                                    </div>
+                                                    <div class="col-md-1 col-sm-1 col-xs-1">
+                                                        <label class="ios7-switch">
+                                                            <input type="checkbox" checked>
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-11 col-sm-11 col-xs-11 no-padding">
+                                                        <h3>Disable IP connectivity</h3>
+                                                    </div>
+                                                    <div class="col-md-1 col-sm-1 col-xs-1">
+                                                        <label class="ios7-switch">
+                                                            <input type="checkbox" checked>
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div class="col-md-11 col-sm-11 col-xs-11 no-padding">
+                                                        <h3>Enable NextRadio demo stations</h3>
+                                                    </div>
+                                                    <div class="col-md-1 col-sm-1 col-xs-1">
+                                                        <label class="ios7-switch">
+                                                            <input type="checkbox" checked>
+                                                            <span></span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="local-cont">
+                                                <a class="close-local-host" href="#"><i class="fa fa-times"></i></a>
+
+                                                <h3>Location</h3>
+                                                <ul>
+                                                    <li>
+                                                        <input type="radio" name="radiog_lite" id="radio1"
+                                                               class="css-checkbox"/>
+                                                        <label for="radio1" class="css-label radGroup1">
+                                                            <span class="abs_class_span"></span>
+                                                            <h4>Use current</h4>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="radiog_lite" id="radio2"
+                                                               class="css-checkbox"/>
+                                                        <label for="radio2" class="css-label radGroup1">
+                                                            <span class="abs_class_span"></span>
+                                                            <h4>Chicago, IL</h4>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="radiog_lite" id="radio3"
+                                                               class="css-checkbox"/>
+                                                        <label for="radio3" class="css-label radGroup1">
+                                                            <span class="abs_class_span"></span>
+                                                            <h4>Las Vegas, NV</h4>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="radiog_lite" id="radio4"
+                                                               class="css-checkbox"/>
+                                                        <label for="radio4" class="css-label radGroup1">
+                                                            <span class="abs_class_span"></span>
+                                                            <h4>Mountain View, CA</h4>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="radiog_lite" id="radio5"
+                                                               class="css-checkbox"/>
+                                                        <label for="radio5" class="css-label radGroup1">
+                                                            <span class="abs_class_span"></span>
+                                                            <h4>Piscataway, NJ</h4>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab_below_6">
+                                <div class="no-padding single-title">
+                                    <p><a href="#"><i class="fa fa-heart"></i></a>Bookmarked on 89.7 KCNV</p>
+                                </div>
+                                <div class="table-panel-content table-panel-content-more-item">
+                                    <!--<h3>89.7 EENL</h3>-->
+                                    <div class="buttons left-butt ">
+                                        <a href="#">BUY</a>
+                                        <a href="#">DISLIKE</a>
+                                        <a href="#">LIKE</a>
+                                        <a href="#">SHARE</a>
+                                    </div>
+
+                                    <div class="table-panel-content-item clearfix ">
+
+                                        <img src="images/1bd2014.jpg" alt="">
+
+                                        <h1 class="first-conf">89.7 EENL</h1>
+
+                                        <h2 class="first-conf">Next Level Radio</h2>
+                                        <h4 class="first-conf">Next Level</h4>
+
+                                        <div class="buttons">
+                                            <a class="" href="#">BUY</a>
+                                            <a class="more " href="#">MORE</a>
+                                            <a class="back inactive" href="#"><i class="fa fa-caret-left"></i></a>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12 sucsess-cont">
+                                    <p><span class="sucses-ckeck"><i class="fa fa-check"></i></span>Not implemented yet
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab_below_7">
+                                <div class="no-padding single-title">
+                                    <div class="buttons ">
+                                        <a class="back-to-2 tab-link" href="#tab_below_1" data-toggle="tab"><span><i
+                                                class="fa fa-caret-left"></i></span>Other</a>
+                                    </div>
+                                </div>
+                                <div class="carusel-cont2" id="jssor_5"
+                                     style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; visibility: hidden;">
+                                    <!-- Loading Screen -->
+                                    <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                                        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;">
+
+                                        </div>
+                                        <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                                    </div>
+                                    <div class="sliyder_class" data-u="slides"
+                                         style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden;">
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont img-cont-active" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont img-cont-active" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                        <div class="img-cont" style="display: none;">
+                                            <img data-u="image" src="images/img-fallback.svg"/>
+
+                                            <h3>100.7</h3>
+                                        </div>
+                                    </div>
+                                    <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul id="fool_tabs" class="nav nav-tabs nav-foot-menu">
+                            <li class="active">
+                                <a href="#tab_below_1" class="tab-link" data-toggle="tab">
+                                    NOW PLAYING </a>
+                            </li>
+                            <li  class="">
+                                <a id='tab' class="my_tab_1 tab-link" href="#tab_below_2" data-toggle="tab"/>
+                                GUIDE </a>
+                            </li>
+                            <li>
+                                <a href="#tab_below_3" class="my_tab_2 tab-link" data-toggle="tab"/>
+                                FAVORITES </a>
+                            </li>
+                            <li>
+                                <a href="#tab_below_4" class="my_tab_3 tab-link" data-toggle="tab"/>
+                                BOOKMARKS </a>
+                            </li>
+                            <li class="li-settings">
+                                <a href="#tab_below_5" class="tab-link" data-toggle="tab">
+                                    <i class="fa fa-cog"></i>
+                                </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.bxslider.js"></script>
+<script>jssor_1_slider_init();</script>
+<script>jssor_2_slider_init();</script>
+<script>jssor_3_slider_init();</script>
+<script>jssor_4_slider_init();</script>
+<script>jssor_5_slider_init();</script>
+<script src="assets/knobKnob/knobKnob.jquery.js"></script>
+<script src="assets/js/script.js"></script>
+
+<link rel="stylesheet" href="assets/css/styles.css"/>
+<link rel="stylesheet" href="assets/knobKnob/knobKnob.css"/>
+
+
+</body>
+</html>

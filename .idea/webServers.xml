@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2c966cca-ee5d-4ebe-8454-0daafd31b64e" name="radio" url="http://192.254.178.102">
+        <fileTransfer host="192.254.178.102" port="21" rootFolder="/public" password="df9adf89dfe4dfe7dff5df8fdfc1dfc2dff4dfc4dfffdfc8" username="radio@ilikeitcompany.ru">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" showHiddenFiles="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

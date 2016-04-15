@@ -1,0 +1,137 @@
+/***
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+/* Default mode */
+.tabbable-line > .nav-tabs {
+    padding-left: 50px;
+    border: none;
+    margin: 0px;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.tabbable-line > .nav-tabs li:active{
+    color: #fff;
+    background: #0d819a;
+}
+
+.slider5{
+    position: absolute;
+    display: block;
+}
+
+.tabbable-line > .nav-tabs > li {
+    margin-right: 2px;
+}
+.tabbable-line > .nav-tabs > li > a {
+    border: 0;
+    margin-right: 0;
+    color: #333;
+}
+.tabbable-line > .nav-tabs > li > a > i {
+    color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+    border-bottom: 4px solid #fbcdcf;
+}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+    border: 0;
+    background: none !important;
+    color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+    color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+    margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+    border-bottom: 4px solid #f3565d;
+    position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+    line-height: 50px;
+    background: #fff;
+    font-size: 35px;
+    font-weight: 900;
+    padding-left: 27px;
+    padding-right: 27px;
+    transition: color 200ms ease,border-color 200ms ease,background-color 200ms ease,opacity 200ms ease;
+}
+.tabbable-line > .nav-tabs > li.active > a:hover{
+    line-height: 50px;
+    background: #fff !important;
+    /*font-size: 24px;*/
+    font-weight: 900;
+    padding-left: 27px;
+    padding-right: 27px;
+    transition: color 200ms ease,border-color 200ms ease,background-color 200ms ease,opacity 200ms ease;
+}
+
+.nav-foot-menu li:active{
+    background-color: #0d819a;
+}
+
+.tabbable-line > .nav-tabs > li.active > a > i {
+    color: #404040;
+}
+.tabbable-line > .tab-content {
+    margin-top: 0px;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+}
+.portlet .tabbable-line > .tab-content {
+    padding-bottom: 0;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border:none !important;
+}
+/* Below tabs mode */
+
+.tabbable-line.tabs-below > .nav-tabs > li {
+    background-color: rgba(175,175,175,.6);
+    font-weight: 700;
+    border-radius: .25em .25em 0 0;
+    top: auto;
+    line-height: 48px;
+    margin: 0;
+    height: auto;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0 .25em;
+}
+.tabbable-line.tabs-below > .nav-tabs > li > a {
+    margin-top: 0;
+}
+.tabbable-line.tabs-below > .nav-tabs > li:hover {
+    border-bottom: 0;
+}
+.tabbable-line.tabs-below > .nav-tabs > li.active {
+    margin-bottom: 0px;
+    border-bottom: 0;
+}
+.tabbable-line.tabs-below > .tab-content {
+    margin-top: 0px;
+    border-top: 0;
+    padding-bottom: 15px;
+}
+.tabbable-panel{
+    background: url('../images/bg.radio.jpg') no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 1px 1px 8px rgba(255,255,255,.1),0 -10px 40px rgba(0,0,0,.5)inset;
+    height: 650px;
+}
+.tabbable-panel .tabbable-line{
+    height: 100%;
+    position: relative;
+}

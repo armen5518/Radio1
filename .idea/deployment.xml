@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="radio" promptOnLocalOverwrite="false" uploadOnCheckin="2c966cca-ee5d-4ebe-8454-0daafd31b64e">
+    <serverData>
+      <paths name="radio">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="radio" />
+  </component>
+</project>
