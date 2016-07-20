@@ -1,0 +1,20 @@
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/GlobalSport/mycoach-sdk.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/GlobalSport/mycoach-sdk-core.git"
+    }
+  ],
+  "require": {
+    "armen5518/Radio1": "*",
+   
+  },
+  "name": "MyCoach Web Application",
+  "require-dev": {
+    "armen5518/Radio1": "*"
+  }
+}
