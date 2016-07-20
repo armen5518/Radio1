@@ -1,20 +1,24 @@
 {
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/GlobalSport/mycoach-sdk.git"
+    "name": "armen5518",
+    "description": "Fixture generator. The Faker integration for the Yii framework.",
+    "keywords": ["armen", "faker", "fixture"],
+    "type": "armen-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2-faker/issues",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2-faker"
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/GlobalSport/mycoach-sdk-core.git"
+    "authors": [
+        {
+            "name": "Arm Mark Jebri",
+            "email": "armen.github@yandex.ru"
+        }
+    ],
+    "require": {
+        "armen5518/Radio1": "*",
     }
-  ],
-  "require": {
-    "armen5518/Radio1": "*",
-   
-  },
-  "name": "MyCoach Web Application",
-  "require-dev": {
-    "armen5518/Radio1": "*"
-  }
+
 }
